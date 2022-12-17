@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css"  href="{% static 'css/startpage/style.css' %}" />
+</head>
+
+<body>
+<h3>Морской бой</h3>
+<form method="post" >
+	{% csrf_token %}
+	<button name="newlobby" id="create">Создать лобби</button>
+</form>	
+	
+</body>
+</html>

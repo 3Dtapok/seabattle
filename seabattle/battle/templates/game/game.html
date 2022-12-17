@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css"  href="{% static 'css/game/style.css' %}" />
+</head>
+
+<body>
+<h3>Морской бой</h3>
+<form method="post" >
+	{% csrf_token %}
+	<button name="left" id="create">левое поле</button>
+</form>	
+<form method="post" >
+	{% csrf_token %}
+	<button name="rigth" id="create">правое поле</button>
+</form>	
+	
+</body>
+</html>
